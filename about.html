@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apie mus</title>
+    <style>
+        body {
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        #plane {
+            position: absolute;
+            top: 15px;
+            left: -100px;
+            width: 32px;
+            height: 32px;
+            background-image: url('files/logo.png');
+        }
+
+        header{
+            background-color: #053F5C;
+        }
+
+        .container-fluid{
+            background-color: #053F5C;
+        }
+
+        /*
+---------------------------------------------
+Footer
+---------------------------------------------
+*/
+
+        footer {
+            background-color: #053F5C;
+            background-image: url('files/Frame-2.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .footer-subscription {
+            padding: 20px;
+        }
+
+        .inner-wrp {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .block-title {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .form-group {
+            width: 50%;
+            margin: 10px auto;
+        }
+
+        .form-control, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 0.5rem 0;
+        }
+
+        .form-check-label {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        footer p{
+            color: white;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand ms-3" href="index.html">
+            <img class="logo" src="files/logo.png" alt="Įmonės logotipas">
+        </a>
+        <button class="navbar-toggler " style="border: none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"  ></span>
+        </button>
+        <div class="collapse navbar-collapse  justify-content-end me-3" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link text-white" href="about.html">Apie mus</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="travel-list.html">Kelionės</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="trip-details.html">Kelionės informacija</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contacts.html">Kontaktai</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+<!-- Hero sekcija -->
+<section class="container-fluid text-white text-center py-5">
+    <h1 class="display-3">Apie mus</h1>
+    <p class="lead text-white">Sužinokite daugiau apie mūsų įmonės vertybes ir komandą</p>
+    <!-- Lėktuvėlis -->
+    <div id="plane"></div>
+</section>
+
+<main class="container my-5">
+    <!-- Įmonės aprašymas -->
+    <section class="mb-5">
+        <h2 class="text-center mb-4">Kas mes esame</h2>
+        <p class="text-muted text-center">Mūsų įmonė siekia pasiūlyti kokybiškiausias keliones, įspūdžius ir patirtis mūsų klientams. Mes esame komanda, kuri rūpinasi kiekvienu klientu ir siekia užtikrinti jų kelionių sklandumą bei saugumą.</p>
+    </section>
+
+    <!-- Komandos nariai -->
+    <section class="my-5">
+        <h2 class="text-center mb-4">Mūsų komanda</h2>
+        <div class="row g-4">
+            <!-- Komandos narys 1 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="files/profile.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Komandos narys 1" style="width: 50%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Jonas Jonaitis</h5>
+                        <p class="card-text text-muted">Įkūrėjas ir vadovas</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Komandos narys 2 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="files/profile.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Komandos narys 2" style="width: 50%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Agnė Petraitytė</h5>
+                        <p class="card-text text-muted">Pardavimų vadovė</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Komandos narys 3 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="files/profile.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Komandos narys 3" style="width: 50%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Marius Kazlauskas</h5>
+                        <p class="card-text text-muted">Rinkodaros specialistas</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Komandos narys 4 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="files/profile.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Komandos narys 4" style="width: 50%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Laura Žemaitytė</h5>
+                        <p class="card-text text-muted">Kelionių vadovė</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misija ir vertybės -->
+    <section class="my-5">
+        <h2 class="text-center mb-4">Mūsų misija ir vertybės</h2>
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <i class="bi bi-compass fs-1 text-primary"></i>
+                <h5 class="mt-2">Kokybė</h5>
+                <p class="text-muted">Užtikriname aukščiausią kelionių kokybę ir nepriekaištingą aptarnavimą.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="bi bi-heart fs-1 text-danger"></i>
+                <h5 class="mt-2">Klientų rūpestis</h5>
+                <p class="text-muted">Mums svarbus kiekvienas klientas ir jų unikali patirtis kelionėse.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="bi bi-globe fs-1 text-success"></i>
+                <h5 class="mt-2">Atsakomybė</h5>
+                <p class="text-muted">Laikomės aukštų atsakomybės standartų dėl aplinkos ir visuomenės.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Socialinių tinklų nuorodos -->
+    <section class="text-center my-5">
+        <h3>Sekite mus socialiniuose tinkluose</h3>
+        <a href="#" class="text-decoration-none mx-2">
+            <i class="bi bi-facebook fs-2 text-primary"></i>
+        </a>
+        <a href="#" class="text-decoration-none mx-2">
+            <i class="bi bi-twitter fs-2 text-info"></i>
+        </a>
+        <a href="#" class="text-decoration-none mx-2">
+            <i class="bi bi-instagram fs-2 text-danger"></i>
+        </a>
+        <a href="#" class="text-decoration-none mx-2">
+            <i class="bi bi-linkedin fs-2 text-primary"></i>
+        </a>
+    </section>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Metai</th>
+            <th scope="col">Pasiekimas</th>
+            <th scope="col">Aprašymas</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>2017</td>
+            <td>Pirmasis apdovanojimas</td>
+            <td>Gavome „Metų inovacijų“ apdovanojimą už įdiegiamus sprendimus.</td>
+        </tr>
+        <tr>
+            <td>2019</td>
+            <td>Plėtra į tarptautinę rinką</td>
+            <td>Pradėjome teikti paslaugas ir Europos šalyse.</td>
+        </tr>
+        <tr>
+            <td>2021</td>
+            <td>Aplinkosaugos iniciatyva</td>
+            <td>Įgyvendinome projektą, siekiantį sumažinti įmonės CO2 išmetimus 30%.</td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+
+<footer>
+    <div class="footer-subscription">
+        <div class="inner-wrp">
+            <span class="block-title">Prenumeruok specialius pasiūlymus!</span>
+
+            <form id="subscribeFooterForm" method="post" action="/subscribe">
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="Įvesk el. pašto adresą" required>
+                </div>
+
+                <label for="subscribe_agree" class="form-check-label">
+                    <input type="checkbox" name="subscribe_agree" id="subscribe_agree" value="1" required>
+                    Sutinku gauti naujienas.
+                </label>
+
+                <button  class="btn btn-secondary" type="submit">
+                    Prenumeruoti
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <p>Visos teisės saugomos &copy; 2024</p>
+</footer>
+<script>
+    let plane = document.getElementById('plane');
+    let planePosition = 0; // Lėktuvas pradeda judėti nuo ekrano pradžios
+    let targetPosition =screen.width; // Lėktuvas pasieks šią poziciją (už ekrano)
+
+    // Lėktuvo judėjimo intervalas
+    let moveInterval;
+
+    // SetTimeout užtikrins, kad lėktuvas pradės judėti tik po 3 sekundžių
+    setTimeout(function() {
+        // Pradeda judėti po 3 sekundžių
+        moveInterval = setInterval(function() {
+            planePosition += 5; // Kiekvieną kartą lėktuvas judės 5px
+
+            // Jei lėktuvas pasiekia dešinį ekraną
+            if (planePosition <= targetPosition) {
+                plane.style.left = planePosition + 'px'; // Atnaujiname lėktuvo poziciją
+            } else {
+                clearInterval(moveInterval); // Nutraukiam judėjimo intervalą, kai lėktuvas pasiekia ekraną
+            }
+        }, 30); // Kas 30ms lėktuvas pasistums 5px
+    }, 3000); // Pradės judėti po 3 sekundžių
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

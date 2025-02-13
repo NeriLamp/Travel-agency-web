@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Užsakymo forma</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        header{
+            background-color: #053F5C;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand ms-3" href="index.html">
+            <img class="logo" src="files/logo.png" alt="Įmonės logotipas">
+        </a>
+        <button class="navbar-toggler " style="border: none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"  ></span>
+        </button>
+        <div class="collapse navbar-collapse  justify-content-end me-3" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link text-white" href="about.html">Apie mus</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="travel-list.html">Kelionės</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="trip-details.html">Kelionės informacija</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contacts.html">Kontaktai</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<nav class="ms-3"  style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="trip-details.html">Kelinės informacija</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Užsakymo forma</li>
+    </ol>
+</nav>
+
+<div class="progress mx-5" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+</div>
+
+<main class="container mt-4">
+
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10 col-sm-12">
+            <div class="card shadow">
+                <div class="card-body p-4">
+                    <h2 class="card-title text-center mb-4">Pateikite užsakymą</h2>
+
+                    <form>
+                        <!-- Vardas ir pavardė -->
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Vardas ir pavardė</label>
+                            <input type="text" class="form-control" id="name" placeholder="Įveskite savo vardą ir pavardę" required>
+                        </div>
+
+                        <!-- El. paštas -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">El. paštas</label>
+                            <input type="email" class="form-control" id="email" placeholder="Įveskite savo el. paštą" required>
+                        </div>
+
+                        <!-- Telefonas -->
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Telefono numeris</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Jūsų telefono numeris" required>
+                        </div>
+
+                        <!-- Kelionės data -->
+                        <div class="mb-3">
+                            <label for="travelDate" class="form-label">Kelionės data</label>
+                            <input type="date" class="form-control" id="travelDate" required>
+                        </div>
+
+                        <!-- Keliautojų skaičius -->
+                        <div class="mb-3">
+                            <label for="numPeople" class="form-label">Keliautojų skaičius</label>
+                            <select class="form-select" id="numPeople">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+
+                        <!-- Žinutė ar specialūs reikalavimai -->
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Žinutė</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Įveskite papildomus pageidavimus ar klausimus"></textarea>
+                        </div>
+
+                        <!-- Sutinku su sąlygomis -->
+                        <div class="form-check mb-4">
+                            <input type="checkbox" class="form-check-input" id="terms" required>
+                            <label class="form-check-label" for="terms">Sutinku su taisyklėmis ir sąlygomis</label>
+                        </div>
+
+                        <!-- Pateikti užsakymą mygtukas -->
+                        <div class="text-center">
+                            <button id="submitOrder" type="button" class="btn btn-primary btn-lg" style=" background-color: #053F5C;">Pateikti užsakymą</button>
+                        </div>
+
+                        <!-- Toast pranešimas -->
+                        <div class="toast" id="successToast" role="alert" aria-live="assertive" aria-atomic="true"  style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1050;">
+                            <div class="toast-header">
+                                <strong class="me-auto">Užsakymo pranešimas</strong>
+                                <small>Just now</small>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                            </div>
+                            <div class="toast-body">
+                                Užsakymas atliktas sėkmingai!
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="bg-light text-center py-3 mt-5">
+    <p class="mb-0">&copy; 2024 Kelionių Agentūra. Visos teisės saugomos.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.getElementById('submitOrder').addEventListener('click', function() {
+        var email = document.getElementById('email').value.trim();
+        var phone = document.getElementById('phone').value.trim();
+        var termsChecked = document.getElementById('terms').checked;
+
+        // Patikrinkite įvesties duomenis
+        var isValid = true;
+        var errorMessage = '';
+
+        // Patikrinimas: El. paštas
+        if (!email.includes('@') || !email.includes('.')) {
+            isValid = false;
+            errorMessage += 'El. paštas nėra teisingas.\n';
+        }
+
+        // Patikrinimas: Telefonas
+        var phoneRegex = /^\+?[0-9]{9,15}$/;
+        if (!phoneRegex.test(phone)) {
+            isValid = false;
+            errorMessage += 'Telefono numeris turi būti 10-15 skaičių ilgio, galimas + ženklas priekyje.\n';
+        }
+
+        // Patikrinimas: Sutikimas su sąlygomis
+        if (!termsChecked) {
+            isValid = false;
+            errorMessage += 'Turite sutikti su taisyklėmis ir sąlygomis.\n';
+        }
+
+        // Jei visi duomenys teisingi, rodyti toast pranešimą
+        if (isValid) {
+            // Rodyti toast pranešimą
+            var toastEl = document.getElementById('successToast');
+            var toast = new bootstrap.Toast(toastEl);
+            toast.show();
+
+            // Nukreipti į kitą puslapį po 3 sekundžių
+            setTimeout(function() {
+                window.location.href = "nextpage.html"; // pakeiskite į norimą puslapį
+            }, 3000);
+        } else {
+            // Jei duomenys neteisingi, rodyti alert su klaidomis
+            alert("Klaidos:\n" + errorMessage);
+        }
+    });
+</script>
+</body>
+</html>
